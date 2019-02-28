@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="eng-us">
+<head>
+	<title>Burger Express</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<section>
+		<header>
+			<figure>
+				<div id="burger">
+					<img id="burgerLogo" src="https://thumbs.gfycat.com/WideeyedJealousDunlin-small.gif">
+				</div>
+				<h1>Burger Express</h1>
+			</figure>
+		</header>
+		<main>
+			<div id="undevoured">
+			</div>
+			<div id="devoured">
+			</div>
+		</main>
+		<div>
+			<form action="/api/addBurger" method="POST">
+				<input type="text" name="burgerName" required>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<p>Enter A Burger & Sumbit. Click "Devour" to Eat the Burger!</p>
+	</section>
+</body>
+</html>
